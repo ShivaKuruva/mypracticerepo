@@ -4,6 +4,8 @@ public class User {
     private String userId;
     private String userName;
     private String phoneNumber;
+    private Posts posts;
+    private Notifications notifications;
 
     public User(String userId, String userName, String phoneNumber) {
         this.userId = userId;
@@ -33,5 +35,21 @@ public class User {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public Posts getPosts() {
+        return posts;
+    }
+
+    public void setPosts(Posts posts) {
+        this.posts = posts;
+    }
+
+    public Notifications getNotifications() {
+        return notifications;
+    }
+
+    public void setNotifications(Notifications notifications) {
+        this.notifications = notifications;
     }
 }
